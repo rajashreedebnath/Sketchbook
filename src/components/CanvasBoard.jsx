@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import CanvasToolbar from "./CanvasToolbar";
-import CanvasCanvas from "./CanvasLogic";
+import CanvasLogic from "./CanvasLogic";
 import CanvasControls from "./CanvasControls";
 import useCanvasSetup from "../hooks/useCanvasSetup";
 import useDrawingEvents from "../hooks/useDrawingEvents";
@@ -51,7 +51,7 @@ export default function CanvasBoard({ setSketches }) {
         showGrid={showGrid}
       />
 
-      <CanvasCanvas
+      <CanvasLogic
         canvasRef={canvasRef}
         startDrawing={startDrawing}
         draw={draw}
