@@ -16,9 +16,9 @@ export default function SketchGallery({ sketches, setSketches }) {
         {sketches.map((sketch) => (
           <div
             key={sketch.id}
-            className="rounded p-4 flex flex-col shadow
-    bg-gradient-to-br from-pink-100 via-purple-200 to-violet-100
-    border border-gray-200"
+            className="rounded p-4 flex flex-col shadow-lg
+            bg-gradient-to-br from-pink-100 via-purple-200 to-violet-100
+            border border-gray-200"
           >
             <img
               src={sketch.image}
@@ -35,7 +35,7 @@ export default function SketchGallery({ sketches, setSketches }) {
             <div className="flex gap-3 mt-4">
               <button
                 onClick={() => handleDelete(sketch.id)}
-                className="flex-1 text-white font-semibold py-2 rounded
+                className="flex-1 text-white font-semibold py-2 rounded-lg
                   bg-gradient-to-r from-pink-300 via-fuchsia-400 to-red-500
                   hover:from-pink-400 hover:via-yellow-400 hover:to-red-400
                   transition-colors duration-300"
@@ -49,7 +49,7 @@ export default function SketchGallery({ sketches, setSketches }) {
                   link.download = `sketch-${sketch.id}.png`;
                   link.click();
                 }}
-                className="flex-1 text-white font-semibold py-2 rounded
+                className="flex-1 text-white font-semibold py-2 rounded-lg
                   bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300
                   hover:from-blue-400 hover:via-indigo-400 hover:to-purple-400
                   transition-colors duration-300"
